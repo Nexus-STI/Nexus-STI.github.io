@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabrication – Nexus - Kiosque de tri automatique</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f1419;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel="stylesheet" href="CSSsite.css">
+    <link rel="stylesheet" href="pagefabrication.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="nexus websitee.html" class="nav-logo">
+                    <img src="image/nexus-logo.png" alt="Nexus" class="nav-logo-img">
+                    <h2 class="logo-texte" aria-hidden="true">NEXUS</h2>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="nexus websitee.html" class="nav-link">Accueil</a></li>
+                    <li><a href="pagedécouvrir.html" class="nav-link">Découvrir</a></li>
+                    <li><a href="pagefabrication.html" class="nav-link">Fabrication</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero-fab" class="hero hero-fab">
+            <div class="hero-fab-content">
+                <h1 class="hero-title">Comment est fabriqué le kiosque <span class="accent">Nexus</span> ?</h1>
+                <p class="hero-subtitle">Un processus rigoureux de conception, fabrication et intégration pour garantir un kiosque de tri fiable et pédagogique.</p>
+            </div>
+            <div class="hero-fab-visual">
+                <div class="kiosk-placeholder">
+                    <svg viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg" class="kiosk-svg">
+                        <!-- Kiosk assembly illustration -->
+                        <defs>
+                            <linearGradient id="kiosk-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00d966;stop-opacity:0.3" />
+                                <stop offset="100%" style="stop-color:#00d966;stop-opacity:0.1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Main body -->
+                        <rect x="40" y="30" width="120" height="160" rx="10" fill="url(#kiosk-grad)" stroke="#00d966" stroke-width="2"/>
+                        <!-- Front panel -->
+                        <rect x="50" y="50" width="100" height="90" rx="5" fill="none" stroke="#00ff77" stroke-width="1.5" opacity="0.8"/>
+                        <!-- Screen area -->
+                        <rect x="60" y="60" width="80" height="60" fill="rgba(0,217,102,0.1)" stroke="#00ff77" stroke-width="1"/>
+                        <!-- Bins opening -->
+                        <circle cx="80" cy="180" r="8" fill="none" stroke="#00d966" stroke-width="1.5"/>
+                        <circle cx="120" cy="180" r="8" fill="none" stroke="#00d966" stroke-width="1.5"/>
+                        <!-- Internal components hint -->
+                        <line x1="50" y1="160" x2="150" y2="160" stroke="#00d966" stroke-width="1" opacity="0.5"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process-section">
+            <div class="section-container">
+                <h2>Le processus de fabrication en 5 étapes</h2>
+                <p class="section-lead">Chaque kiosque Nexus est conçu et assemblé avec rigueur pour garantir performance et fiabilité.</p>
+
+                <div class="process-grid">
+                    <div class="process-card" data-step="1">
+                        <div class="step-number">01</div>
+                        <h3>Conception des plans et architecture</h3>
+                        <p>Création des schémas 3D, définition des dimensions, et calcul de la mécanique interne. Utilisation d'outils CAO pour optimiser la structure et l'ergonomie.</p>
+                        <div class="step-icon">📐</div>
+                    </div>
+
+                    <div class="process-card" data-step="2">
+                        <div class="step-number">02</div>
+                        <h3>Fabrication des pièces mécaniques</h3>
+                        <p>Usinage des cadres, des guidages et des mécanismes d'aiguillage. Production des bacs de collecte et de la structure externe en matériaux robustes.</p>
+                        <div class="step-icon">🔧</div>
+                    </div>
+
+                    <div class="process-card" data-step="3">
+                        <div class="step-number">03</div>
+                        <h3>Intégration des capteurs et électronique</h3>
+                        <p>Installation de la caméra, des capteurs optiques et de la carte Raspberry Pi / Arduino. Câblage et test des connexions pour assurer la communication fiable.</p>
+                        <div class="step-icon">⚡</div>
+                    </div>
+
+                    <div class="process-card" data-step="4">
+                        <div class="step-number">04</div>
+                        <h3>Assemblage des modules</h3>
+                        <p>Montage des pièces mécaniques, fixation de l'électronique, et intégration de l'écran de contrôle. Respect strict des procédures d'assemblage pour la qualité.</p>
+                        <div class="step-icon">🔩</div>
+                    </div>
+
+                    <div class="process-card" data-step="5">
+                        <div class="step-number">05</div>
+                        <h3>Tests qualité et calibration</h3>
+                        <p>Tests de fonctionnement complet, calibration des capteurs, vérification de la précision de tri. Chaque kiosque subit une batterie de tests avant livraison.</p>
+                        <div class="step-icon">✅</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unique Section -->
+        <section id="unique" class="unique-section">
+            <div class="section-container">
+                <h2>Pourquoi cette fabrication est <span class="accent">unique</span> ?</h2>
+                <div class="unique-content">
+                    <div class="unique-text">
+                        <p>Le kiosque Nexus est conçu pour allier performance industrielle et pédagogie scolaire. Chaque composant est sélectionné et intégré pour garantir une expérience utilisateur claire et une précision de tri maximale.</p>
+                        <ul class="unique-list">
+                            <li><strong>Robustesse :</strong> Structure renforcée pour utilisation intensive en environnement scolaire.</li>
+                            <li><strong>Automatisation intelligente :</strong> Capteurs avancés et IA pour tri précis et rapide.</li>
+                            <li><strong>Rapidité d'analyse :</strong> Identification et tri en moins de 2 secondes.</li>
+                            <li><strong>Collecte de données :</strong> Enregistrement des statistiques en temps réel pour analyse pédagogique.</li>
+                            <li><strong>Maintenance facile :</strong> Accès simple aux composants pour remplacement et entretien.</li>
+                        </ul>
+                    </div>
+                    <div class="unique-visual">
+                        <div class="feature-icon">🎯</div>
+                        <p class="feature-text">Précision de tri<br><strong>95%</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Visual -->
+        <section id="timeline" class="timeline-section">
+            <div class="section-container">
+                <h2>Délais de fabrication</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-phase="conception">
+                        <div class="timeline-marker">2-3 semaines</div>
+                        <h4>Conception</h4>
+                        <p>Plans et validation</p>
+                    </div>
+                    <div class="timeline-item" data-phase="fabrication">
+                        <div class="timeline-marker">4-5 semaines</div>
+                        <h4>Fabrication</h4>
+                        <p>Pièces mécaniques</p>
+                    </div>
+                    <div class="timeline-item" data-phase="integration">
+                        <div class="timeline-marker">2-3 semaines</div>
+                        <h4>Intégration</h4>
+                        <p>Électronique & assembly</p>
+                    </div>
+                    <div class="timeline-item" data-phase="tests">
+                        <div class="timeline-marker">1 semaine</div>
+                        <h4>Tests & QA</h4>
+                        <p>Qualité & livraison</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nexus</h3>
+                <p>Kiosque de tri automatique intelligent — Projet scolaire STI2D/SIN</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens</h3>
+                <ul>
+                    <li><a href="nexus websitee.html">Accueil</a></li>
+                    <li><a href="pagedécouvrir.html">Découvrir</a></li>
+                    <li><a href="pagefabrication.html">Fabrication</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Prof: contact@nexus.example</p>
+                <p>Email: info@nexus.local</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nexus. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="JAVAsite.js"></script>
+    <script src="pagefabrication.js"></script>
+</body>
+</html>

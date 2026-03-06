@@ -1,0 +1,16 @@
+# Fichiers système
+Thumbs.db
+.DS_Store
+
+# Node modules (au cas où)
+node_modules/
+
+# Logs
+debug.log*
+
+# Environnement
+.env
+
+# Visual Studio Code
+target/
+.vscode/

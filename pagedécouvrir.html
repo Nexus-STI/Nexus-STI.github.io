@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvrir – Nexus - Kiosque de tri automatique</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f1419;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel="stylesheet" href="CSSsite.css">
+    <link rel="stylesheet" href="pagedécouvrir.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="nexus websitee.html" class="nav-logo">
+                    <img src="image/nexus-logo.png" alt="Nexus" class="nav-logo-img">
+                    <h2 class="logo-texte" aria-hidden="true">NEXUS</h2>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="nexus websitee.html" class="nav-link">Accueil</a></li>
+                    <li><a href="pagedécouvrir.html" class="nav-link">Découvrir</a></li>
+                    <li><a href="pagefabrication.html" class="nav-link">Fabrication</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero-discover" class="hero hero-discover">
+            <div class="hero-discover-content">
+                <h1 class="hero-title">Découvrez <span class="accent">Nexus</span></h1>
+                <p class="hero-subtitle">Un kiosque intelligent de tri automatique pour sensibiliser les jeunes au tri sélectif et à la gestion des déchets.</p>
+            </div>
+            <div class="hero-discover-visual">
+                <div class="kiosk-main">
+                    <svg viewBox="0 0 250 350" xmlns="http://www.w3.org/2000/svg" class="kiosk-main-svg">
+                        <defs>
+                            <linearGradient id="body-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00d966;stop-opacity:0.4" />
+                                <stop offset="100%" style="stop-color:#00d966;stop-opacity:0.1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Kiosk body -->
+                        <rect x="40" y="40" width="170" height="220" rx="15" fill="url(#body-grad)" stroke="#00d966" stroke-width="3"/>
+                        <!-- Screen -->
+                        <rect x="55" y="60" width="140" height="110" rx="10" fill="rgba(0,217,102,0.15)" stroke="#00ff77" stroke-width="2"/>
+                        <text x="125" y="120" font-size="14" fill="#00ff77" text-anchor="middle" font-weight="bold">NEXUS</text>
+                        <!-- Openings for bins -->
+                        <g id="bin-openings">
+                            <rect x="60" y="190" width="35" height="45" rx="5" fill="none" stroke="#00d966" stroke-width="2"/>
+                            <rect x="110" y="190" width="35" height="45" rx="5" fill="none" stroke="#00d966" stroke-width="2"/>
+                            <rect x="160" y="190" width="35" height="45" rx="5" fill="none" stroke="#00d966" stroke-width="2"/>
+                        </g>
+                        <!-- Button area -->
+                        <circle cx="125" cy="160" r="5" fill="#00ff77" opacity="0.6"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="section-container">
+                <h2>Les caractéristiques principales</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3>Intelligence Artificielle</h3>
+                        <p>Utilise la vision par ordinateur et le machine learning pour identifier et classifier les déchets avec une précision de 95%.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Traitement Rapide</h3>
+                        <p>Tri automatique en moins de 2 secondes par déchet. Peut traiter jusqu'à 1000 objets par jour.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Données en Temps Réel</h3>
+                        <p>Statistiques détaillées sur les types de déchets, taux de tri, et impact environnemental mesurable.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Impact Environnemental</h3>
+                        <p>Favorise le tri sélectif et sensibilise les utilisateurs à la gestion responsable des déchets.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎓</div>
+                        <h3>Pédagogique</h3>
+                        <p>Interface intuitive adaptée aux écoles et centres éducatifs. Idéal pour enseigner le tri et l'écologie.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h3>Maintenance Facile</h3>
+                        <p>Composants modulaires et accessibles. Remplacement et entretien simples sans outils spécialisés.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="section-container">
+                <h2>Comment ça marche ?</h2>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-number-circle">1</div>
+                        <h3>Insertion du déchet</h3>
+                        <p>L'utilisateur place un objet dans l'ouverture du kiosque.</p>
+                    </div>
+                    <div class="workflow-arrow">→</div>
+                    <div class="workflow-step">
+                        <div class="step-number-circle">2</div>
+                        <h3>Capture et analyse</h3>
+                        <p>La caméra capture l'image du déchet. L'IA l'analyse en temps réel.</p>
+                    </div>
+                    <div class="workflow-arrow">→</div>
+                    <div class="workflow-step">
+                        <div class="step-number-circle">3</div>
+                        <h3>Classification</h3>
+                        <p>Le système classe le déchet (papier, plastique, verre, métal, etc.).</p>
+                    </div>
+                    <div class="workflow-arrow">→</div>
+                    <div class="workflow-step">
+                        <div class="step-number-circle">4</div>
+                        <h3>Aiguillage automatique</h3>
+                        <p>Un mécanisme dirige le déchet vers le bon bac.</p>
+                    </div>
+                    <div class="workflow-arrow">→</div>
+                    <div class="workflow-step">
+                        <div class="step-number-circle">5</div>
+                        <h3>Collecte et data</h3>
+                        <p>Le déchet est collecté. Les stats sont enregistrées.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack Section -->
+        <section id="tech-stack" class="tech-stack-section">
+            <div class="section-container">
+                <h2>Technologies utilisées</h2>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h3>Matériel</h3>
+                        <ul class="tech-list">
+                            <li>📷 Caméra USB 8MP</li>
+                            <li>🎛️ Raspberry Pi 4 / Jetson Nano</li>
+                            <li>⚙️ Moteur pas à pas & servos</li>
+                            <li>📡 Capteurs optiques</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <h3>Intelligence</h3>
+                        <ul class="tech-list">
+                            <li>🧠 YOLOv8 (Détection d'objets)</li>
+                            <li>🤖 TensorFlow / PyTorch</li>
+                            <li>📊 OpenCV (Traitement d'image)</li>
+                            <li>💾 Base de données déchets</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <h3>Logiciel</h3>
+                        <ul class="tech-list">
+                            <li>🐍 Python (IA & contrôle)</li>
+                            <li>🌐 Node.js (API serveur)</li>
+                            <li>💻 Interface tactile web</li>
+                            <li>📈 Système de logging</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section id="impact" class="impact-section">
+            <div class="section-container">
+                <h2>L'impact de Nexus</h2>
+                <div class="impact-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Précision de tri</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">2s</div>
+                        <div class="stat-label">Temps de traitement</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Objets/jour</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Catégories reconnues</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nexus</h3>
+                <p>Kiosque de tri automatique intelligent — Projet scolaire STI2D/SIN</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens</h3>
+                <ul>
+                    <li><a href="nexus websitee.html">Accueil</a></li>
+                    <li><a href="pagedécouvrir.html">Découvrir</a></li>
+                    <li><a href="pagefabrication.html">Fabrication</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Prof: contact@nexus.example</p>
+                <p>Email: info@nexus.local</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nexus. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="JAVAsite.js"></script>
+    <script src="pagedécouvrir.js"></script>
+</body>
+</html>
