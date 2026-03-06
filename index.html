@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus - Kiosque de tri automatique</title>
+    <link rel="stylesheet" href="CSSsite.css">
+    <link rel="stylesheet" href="decomposition.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">
+                    <img src="images/nexus-logo.png" alt="Nexus" class="nav-logo-img">
+                    <h2 class="logo-texte" aria-hidden="true">NEXUS</h2>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#fonctionnement" class="nav-link">Fonctionnement</a></li>
+                    <li><a href="pagefabrication.html" class="nav-link">Fabrication</a></li>
+                    <li><a href="#application" class="nav-link">Application</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Kiosque de tri automatique <span class="accent">Nexus</span></h1>
+                <p class="hero-subtitle">Transformez votre gestion des déchets avec l'intelligence artificielle</p>
+                <a class="cta-btn" href="pagedécouvrir.html">Découvrir</a>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <!-- Fonctionnement Section -->
+        <section id="fonctionnement" class="fonctionnement">
+            <div class="section-container">
+                <h2>Comment ça fonctionne ?</h2>
+                <p class="section-subtitle">Nexus en 3 étapes simples</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="icon-number">1</span>
+                        </div>
+                        <h3>Détection</h3>
+                        <p>Nos capteurs analysent automatiquement vos déchets en temps réel grâce à l'IA avancée</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="icon-number">2</span>
+                        </div>
+                        <h3>Tri</h3>
+                        <p>La poubelle oriente automatiquement vos déchets vers le bon bac de tri</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="icon-number">3</span>
+                        </div>
+                        <h3>Données</h3>
+                        <p>Accédez à vos statistiques de tri en temps réel via l'application Nexus</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION – DÉCOMPOSITION DU KIOSQUE AU SCROLL -->
+        <section id="decomposition" class="decomposition">
+            <div class="section-container">
+                <h2>Décomposition du kiosque</h2>
+                <p class="section-subtitle">Descendez pour démonter le kiosque et découvrir ses composants internes.</p>
+            </div>
+
+            <div class="decomp-stage">
+                <div class="decomp-canvas">
+                    <div class="part part-coque" data-part="coque">
+                        <div class="part-visual">
+                            <svg viewBox="0 0 200 160" width="140" height="110" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="grad-coque" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00d966;stop-opacity:0.6" />
+                                        <stop offset="100%" style="stop-color:#00ff77;stop-opacity:0.3" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="30" y="10" width="140" height="140" rx="12" fill="url(#grad-coque)" stroke="#00d966" stroke-width="2"/>
+                                <rect x="50" y="30" width="100" height="80" rx="8" fill="none" stroke="#00ff77" stroke-width="1.5" opacity="0.7"/>
+                                <circle cx="100" cy="130" r="6" fill="#00d966"/>
+                            </svg>
+                        </div>
+                        <div class="part-caption">Coque protectrice — structure et design.</div>
+                    </div>
+
+                    <div class="part part-capteurs" data-part="capteurs">
+                        <div class="part-visual">
+                            <svg viewBox="0 0 200 160" width="140" height="110" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <radialGradient id="grad-camera" cx="40%" cy="40%">
+                                        <stop offset="0%" style="stop-color:#64c8ff;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#0096ff;stop-opacity:0.3" />
+                                    </radialGradient>
+                                </defs>
+                                <circle cx="100" cy="80" r="45" fill="url(#grad-camera)" stroke="#6fc8ff" stroke-width="2"/>
+                                <circle cx="100" cy="80" r="30" fill="none" stroke="#6fc8ff" stroke-width="2"/>
+                                <circle cx="100" cy="80" r="15" fill="none" stroke="#6fc8ff" stroke-width="1.5"/>
+                                <circle cx="85" cy="60" r="5" fill="#6fc8ff" opacity="0.6"/>
+                                <circle cx="115" cy="100" r="4" fill="#6fc8ff" opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <div class="part-caption">Caméra et capteurs optiques pour l'analyse des déchets.</div>
+                    </div>
+
+                    <div class="part part-mecanisme" data-part="mecanisme">
+                        <div class="part-visual">
+                            <svg viewBox="0 0 200 160" width="140" height="110" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="grad-gear" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ff9600;stop-opacity:0.7" />
+                                        <stop offset="100%" style="stop-color:#ff6400;stop-opacity:0.4" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Engrenage 1 -->
+                                <circle cx="60" cy="80" r="35" fill="none" stroke="url(#grad-gear)" stroke-width="2"/>
+                                <g stroke="url(#grad-gear)" stroke-width="2" fill="none">
+                                    <line x1="45" y1="80" x2="30" y2="80" />
+                                    <line x1="60" y1="45" x2="60" y2="30" />
+                                    <line x1="75" y1="80" x2="90" y2="80" />
+                                    <line x1="60" y1="115" x2="60" y2="130" />
+                                </g>
+                                <!-- Engrenage 2 -->
+                                <circle cx="140" cy="80" r="30" fill="none" stroke="url(#grad-gear)" stroke-width="2"/>
+                                <g stroke="url(#grad-gear)" stroke-width="2" fill="none">
+                                    <line x1="125" y1="80" x2="110" y2="80" />
+                                    <line x1="140" y1="50" x2="140" y2="35" />
+                                    <line x1="155" y1="80" x2="170" y2="80" />
+                                    <line x1="140" y1="110" x2="140" y2="125" />
+                                </g>
+                                <!-- Connexion -->
+                                <line x1="95" y1="80" x2="110" y2="80" stroke="url(#grad-gear)" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="part-caption">Mécanique interne (guidage et aiguillage des déchets).</div>
+                    </div>
+
+                    <div class="part part-bacs" data-part="bacs">
+                        <div class="part-visual">
+                            <svg viewBox="0 0 200 160" width="140" height="110" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Bac verre (vert) -->
+                                <rect x="20" y="60" width="40" height="70" rx="3" fill="rgba(0,200,100,0.5)" stroke="#00c864" stroke-width="2"/>
+                                <rect x="25" y="65" width="30" height="50" fill="none" stroke="#00c864" stroke-width="1" opacity="0.6"/>
+                                <!-- Bac plastique (bleu) -->
+                                <rect x="80" y="50" width="40" height="80" rx="3" fill="rgba(100,150,255,0.5)" stroke="#6496ff" stroke-width="2"/>
+                                <rect x="85" y="55" width="30" height="60" fill="none" stroke="#6496ff" stroke-width="1" opacity="0.6"/>
+                                <!-- Bac papier (jaune) -->
+                                <rect x="140" y="60" width="40" height="70" rx="3" fill="rgba(255,200,0,0.5)" stroke="#ffc800" stroke-width="2"/>
+                                <rect x="145" y="65" width="30" height="50" fill="none" stroke="#ffc800" stroke-width="1" opacity="0.6"/>
+                            </svg>
+                        </div>
+                        <div class="part-caption">Bacs de collecte (verre, plastique, papier).</div>
+                    </div>
+
+                    <div class="part part-carte" data-part="carte">
+                        <div class="part-visual">
+                            <svg viewBox="0 0 200 160" width="140" height="110" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="grad-pcb" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#c864ff;stop-opacity:0.6" />
+                                        <stop offset="100%" style="stop-color:#9664c8;stop-opacity:0.3" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Carte -->
+                                <rect x="30" y="20" width="140" height="120" rx="5" fill="url(#grad-pcb)" stroke="#c864ff" stroke-width="2"/>
+                                <!-- Pistes -->
+                                <line x1="50" y1="40" x2="150" y2="40" stroke="#c864ff" stroke-width="1" opacity="0.5"/>
+                                <line x1="50" y1="60" x2="150" y2="60" stroke="#c864ff" stroke-width="1" opacity="0.5"/>
+                                <line x1="50" y1="80" x2="150" y2="80" stroke="#c864ff" stroke-width="1" opacity="0.5"/>
+                                <line x1="50" y1="100" x2="150" y2="100" stroke="#c864ff" stroke-width="1" opacity="0.5"/>
+                                <!-- Composants (puces) -->
+                                <rect x="55" y="45" width="12" height="12" fill="#c864ff" opacity="0.7"/>
+                                <rect x="130" y="45" width="12" height="12" fill="#c864ff" opacity="0.7"/>
+                                <rect x="75" y="65" width="10" height="10" fill="#c864ff" opacity="0.6"/>
+                                <rect x="115" y="85" width="10" height="10" fill="#c864ff" opacity="0.6"/>
+                            </svg>
+                        </div>
+                        <div class="part-caption">Carte de contrôle (Raspberry/Arduino) et alimentation.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section id="application" class="application">
+            <div class="section-container">
+                <div class="app-content">
+                    <div class="app-text">
+                        <h2>L'Application Nexus</h2>
+                        <p>Suivez vos performances de tri, consultez vos statistiques en temps réel et rejoignez une communauté engagée pour l'environnement.</p>
+                        <ul class="app-features">
+                            <li>📊 Suivi des statistiques</li>
+                            <li>🏆 Classements et défis</li>
+                            <li>♻️ Impact environnemental</li>
+                            <li>📱 Interface intuitive</li>
+                        </ul>
+                        <button class="cta-btn cta-secondary" onclick="alert('Application en développement')">Accéder à l'app</button>
+                    </div>
+                    <div class="app-image">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <p>Votre interface Nexus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="section-container">
+                <h2>Prêt à transformer votre tri ?</h2>
+                <p>Rejoignez le mouvement Nexus dès maintenant</p>
+                <button class="cta-btn cta-large">Commencer</button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nexus</h3>
+                <p>Kiosque de tri automatique intelligent</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens</h3>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#fonctionnement">Fonctionnement</a></li>
+                    <li><a href="#application">Application</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Insta: nexus.stiproject</p>
+                <p>Téléphone: +33 1 23 45 67 89</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nexus. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="JAVAsite.js"></script>
+</body>
+</html>
